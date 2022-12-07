@@ -195,5 +195,8 @@ Ahora solo resolvemos los parentesis de modo que $(2n+1)²=(2n+1)(2n+1)$ si desa
 Finalmente para el ultimo termino $(2n+5)²=(2n+5)(2n+5)$ , desarrolando obtendremos que $(2n+5)(2n+5)=4n²+10n+10n+25 \therefore (2n+5)²=4n²+20n+25$
 Ahora solo juntamos todo y $(4n²+4n+1)-(8n²+24n+18)+(4n²+20n+25)$ tras esto agrupamos terminos semejantes y al final tenemos que $a²-2b²+c²=25+1-18 \therefore a²-2b²+c²=8$ por lo que podemos concluir que $\forall \:a,b,c\in \mathbb{Z}$ tal que sean impares consecutivos se concluye que $a^2-2b^2+c^2=8$ .
 
+## Problema (Teoria de Numeros)
 
+¿Existe solucion para la ecuacion $2^n-2^m=1987$ si $m,n\in \mathbb{Z}^+$ ?
 
+Primero que nada para este problema hay que definir algo, al operar en base 2, tenemos que $2^n=2\cdot 2\cdot 2\cdot 2\cdot ...\cdot 2n$ y que por consiguiente $2^m=2\cdot 2\cdot 2\cdot 2\cdot ...\cdot 2m$ por lo que independientemente del valor de $m,n$ el resultado de dicha operacion sera un par puesto que en ningun momento se a agregado un 1 de modo que se cumplaa forma $2n+1$ para un impar $\therefore$ el resultado de $2^n-2^m$ sera siempre par, puesto que por paridad sabemos que la resta de los pares es par, sin embargo el termino 1987 es un impar, pues no cumple la condicion de $2n$, puesto que $2$ no divide a $1987$ por lo tanto es un impar y ya que establecimos que $2^n-2^m$ sera par $\Leftrightarrow$ $m,n\in \mathbb{Z}^+$ y ya que esto queda establecido no hay forma de que la resta de dos numeros pares den par, pues siempre dara un numero divisible entre 2 $\therefore$ $2^n-2^m\ne 1987$
