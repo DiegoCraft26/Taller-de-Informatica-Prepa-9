@@ -1,3 +1,3 @@
-# Taller-de-Informatica-Prepa-9
+# Taller de Informatica Prepa-9
 
 Github para recursos del taller. 
