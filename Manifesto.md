@@ -99,7 +99,7 @@ $$
 \end{matrix}
 $$
 
-Bien, 10! es el total de lugares, a este hay que "restarle" los lugares hipoteticos, que si nos damos cuenta es $4!=4\cdot 3\cdot 2\cdot 1$ y obtendremos los lugares reales, y como se esta multiplicando, la "resta" queda $\frac{10!}{\:4!}=\frac{10\cdot 9\cdot 8\cdot 7\cdot 6\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1}{4\cdot 3\cdot 2\cdot 1}=10\cdot 9\cdot 8\cdot 7\cdot 6\cdot 5$
+Bien, 10! es el total de lugares, a este hay que "restarle" los lugares hipoteticos, que si nos damos cuenta es $4!=4\cdot 3\cdot 2\cdot 1$ y obtendremos los lugares reales, y como se esta multiplicando, la "resta" queda $\frac{10!}{\4!}=\frac{10\cdot 9\cdot 8\cdot 7\cdot 6\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1}{4\cdot 3\cdot 2\cdot 1}=10\cdot 9\cdot 8\cdot 7\cdot 6\cdot 5$
 
 ## Pares e Impares (Teoria de numeros)
 
