@@ -69,13 +69,13 @@ Por ejemplo, imaginemos que quiero acomodar a 10 personas en una fila, si no me 
 En primer lugar tenemos diez posibles lugares para colocarlos, para el primer lugar tendremos a 10 candidatos para elegir, al avanzar al segundo ligar solo contaremos con 9 candidatos, pues a uno ya lo posicionamos en el lugar anterior, para el tercero se contara con 7, pues ya habremos colocado dos anteriormente, y asi sucesivamente hasta llegar al ultimo lugar, donde unicamente contamos con un candidato, visto de forma grafica seria:
 
 $$
-\begin{pmatrix}
+\begin{matrix}
 10 candidatos & 9 cantidatos & 8 candidatos & 7 candidatos & 6 candidatos & 5 candidatos & 4 candidatos & 3 candidatos & 2 candidatos & 1 cantidato\\
 \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & : & .\\
 \vdots & \vdots & \vdots & \vdots & \vdots & : & . & \\
 \vdots & \vdots & : & . & \\
 . \\
-\end{pmatrix}
+\end{matrix}
 $$
 
 Visto de esta manera es sencillo ver como sacar los posibles formas de acomodarlos, simplemente bastaria con multiplicar la cantidad de cantidatos posibles que hay por lugar, obteniendo que para este caso $10\cdot 9\cdot 8\cdot 7\cdot 6\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1$ son las formas posibles de formarlos, lo cual tambien se puede reescribir como 10! (10 factorial)
@@ -90,13 +90,13 @@ Pues este problema es algo diferente al anterior, pues aunque aun contamos con l
 $\quad \quad LUGARES \quad REALES  \quad \quad \quad \quad \quad \quad \quad  \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad LUGARES \quad IMAGINARIOS$
 
 $$
-\begin{pmatrix}
+\begin{matrix}
 10 candidatos & 9 cantidatos & 8 candidatos & 7 candidatos & 6 candidatos & 5 candidatos & | & 4 candidatos & 3 candidatos & 2 candidatos & 1 cantidato\\
 \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & | & \vdots & \vdots & : & .\\
 \vdots & \vdots & \vdots & \vdots & \vdots & : & | & . & \\
 \vdots & \vdots & : & . & \\
 . \\
-\end{pmatrix}
+\end{matrix}
 $$
 
 Bien, 10! es el total de lugares, a este hay que "restarle" los lugares hipoteticos, que si nos damos cuenta es $4!=4\cdot 3\cdot 2\cdot 1$ y obtendremos los lugares reales, y como se esta multiplicando, la "resta" queda $\frac{10!}{\:4!}=\frac{10\cdot 9\cdot 8\cdot 7\cdot 6\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1}{4\cdot 3\cdot 2\cdot 1}=10\cdot 9\cdot 8\cdot 7\cdot 6\cdot 5$
