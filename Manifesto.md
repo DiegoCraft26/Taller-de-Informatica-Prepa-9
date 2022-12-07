@@ -157,18 +157,12 @@ Si somos observadores nos daremos cuenta que los elementos de la izquierda son s
 $$\left(2007\right)\frac{n^2}{n^2+n}=\left(2007\right)\frac{2006}{2007}\Longrightarrow \frac{2007n^2}{n^2+n}=2006,\:\left(n^2+n\right)\frac{2007n^2}{n^2+n}=\left(n^2+n\right)\left(2006\right)\Longrightarrow 2007n^2=2006n^2+2006n,\left(2007n^2\right)-\left(2006n^2\right)=\left(2006n^2+2006n\right)-\left(2006n^2\right)\Longrightarrow n^2=2006n,\frac{n^2}{n}=\frac{2006}{n}\Longrightarrow n=2006$$ 
 Finalmente con esto se concluye que los casos donde $\exists n\in \mathbb{Z}^+$ tal que $\frac{1+3+5+...+\left(2n-1\right)}{2+4+6+...+2n}=\frac{2006}{2007} \quad n=2006$
 
+## Factorizacion (Algebra)
 
+Imagina que te dan $ax²+bx+c=0$ y te pidieran despejar $x$ hay dos maneras de hacerlo, con la formula general o factorizando. Al factorizar hablamos de esto $\left(x1,+\alpha \right)\left(x1,+B\right)=0$ , permiteme explicarte, si tu lo desarrollas llegas a que $\left(x1,+\alpha \right)\left(x2,+B\right)=x^2+Bx+\alpha \:x+\alpha \:B$ , si simplificamos a $Bx+\alpha \:\:x=\left(B+\alpha \:\:\right)x$ tal que $x^2+Bx+\alpha \:x+\alpha \:B=x^2+\left(B+\alpha \:\right)x+\alpha \:B$ pero fijate que esta nueva forma se parece mucho a la expresion original, y eso es porque son lo mismo, siempre y cuando se cumpla una condicion que atenderemos mas adelante. Si no me crees evalua $\left(B+a\right)x$ es un termino que depende de la $x$ siendo la multiplicacion de una variable y un termino independiente, al igual que $bx$ por lo que $\left(B+\alpha \right)x=bx$ y dentro de esto tambien podemos deducir que $\frac{\left(B+\alpha \right)x}{x}=\frac{bx}{x}\therefore B+\alpha =b$ lo cual por si solo ya es una gran deduccion. Pero sigamos, si somos observadores, el producto de $\alpha \:B$ es un termino independiente a la $x$ al igual que $c$ por lo que no es dificil de deducir que $\alpha \:B=c$. Pero ahora ¿que hay del $ax²$ y $x²$ ? ¿acaso tambien son iguales? Pues aqui entra la condicion de antes, pues para que $ax^2+bx+c=x^2+\left(B+\alpha \:\right)x+\alpha \:B,a=1$ por lo que si queremos generalizar la expresion tendiramos que decir algo similar a esto $\frac{ax^2+bx+c}{a}=x^2+\left(B+\alpha \:\right)x+\alpha \:B$ . Pero para fines practicos forzaremos a que $a=1$ haciendo lo de dividir toda la expresion entre $a$ para que ahora si $x^2+bx+c=x^2+\left(B+\alpha \right)x+\alpha B=0$ tal que $\left(x1+\alpha \right)\left(x2+B\right)=0$. Con esto podemos deducir que para que esa ultima condicion se cumpla $x1=-\alpha ,x2=-B$ tal que $\left(-\alpha +\alpha \right)\left(-B+B\right)=\left(\alpha -\alpha \right)\left(B-B\right)=0$. Esto nos da una conclusion muy importante pues para encontrar las soluciondes de $x$ basta con que encontremos a $\alpha$ y $B$ tal que sumados den $bx$ pues $bx=(B+\alpha)x,y$ multiplicados den $c$ pues $c=\alpha B$ tal que $(x1+\alpha)(x2+B)=0$ pues se concluye que $\frac{ax^2+bx+c}{a}=x^2+\left(B+\alpha \right)x+\alpha B=\left(x1+\alpha \right)\left(x2+B\right)=0$ tal que $x1=-\alpha$ y $x2=-B$
 
+## Metodo de Po-Shen Loh (Algebra)
 
+El mayor problema con la factorizacion es que, a priori, solo funciona cuando $x,x2\in \mathbb{Z}$ pues en si el metodo consiste en encontrar un $a$ y $B$ simplemente adivinando tal que $(B+a)=b,aB=c$ pero evidentemente ponerse a adivinar $a$ y $B$ cuando estos sean racionales, irracionales o complejos es simplemente imposible, o eso mismo penso Po-Shen Loh, antes de desarrollar este metodo.
 
-
-
-
-
-
-
-
-
-
-
-
+El truco esta en que $ax²+bx+c=x²+(B+a)x+aB=0$ , si $a,B\in \mathbb{R},a\ne B$ para que se cumpla la forma $\left(x1+a\right)\left(x2+B\right)=0,\left(B+a\right)=b$ y $aB=c$ intuitivamente probariamos con la multiplicacion pues hay menos $a$ y $B$ que multiplicados dan $c$ de los que hay tal que sumados de $b$. El truco empieza aqui, pues comenzamos que cumplen, usaremos la mas simple que es $B=\frac{b}{2},a=\frac{b}{2}$ tal que $\frac{b}{2}+\frac{\b}{\2}=b$ pero esto va en contra de $a\ne B$ ademas salvo en los casos especificos $\left(\frac{b}{2}\right)\left(\frac{b}{2}\right)\ne c$ asi que ¿como solucionamos esto? simple asumimos que $B=\frac{b}{2}+u,a=\frac{b}{2}-u$ tal que $\left(\frac{b}{2}+u\right)+\left(\frac{b}{2}-u\right)=b$ pues las $u$ se cancelan
