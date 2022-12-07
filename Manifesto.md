@@ -139,15 +139,36 @@ Imaginemos que ahora en lugar de pedirte que sumes hasta $n$ , te pidiera que lo
 
 El truco consiste en agarrar la suma y duplicarla colocando este clon justo abajo de nuestra original, solamente que invertida, tal que debajo del primer numero que el ultimo, del segundo el penultimo, y asi... si hacemos la suma verticalmente nos daremos cuenta que es la misma cifra en todos los lugares, por lo que solo debemos sumaldo, al ser el mismo numero pormos multiplicarlo, el resultado de esa multiplicacion lo dividiremos entre dos, pues hicimos la suma deseada dos veces y nos quedaria asi de manera grafica:
 
-$$
-\begin{matrix}
+$$\begin{matrix}
 1 &+& 2 &+& 3 &+& 4 &+& 5 &+& 6 &+& 7 &+& 8 &+& 9 &+& 10 \\
 10 &+& 9 &+& 8 &+& 7 &+& 6 &+& 5 &+& 4 &+& 3 &+& 2 &+& 1 \\
 11 &+& 11 &+& 11 &+& 11 &+& 11 &+& 11 &+& 11 &+& 11 &+& 11 &+& 11 
-\end{matrix}
-$$
+\end{matrix}$$
 
 Entonces podemos deducir que 
 $$\frac{n\left(n+1\right)}{2}=\frac{n^2+n}{2} \quad n\in \mathbb{Z}^+$$
+
+
+## Problema (Teoria de numeros)
+
+Resuelve los casos para $n$ tal que $\frac{1+3+5+...+\left(2n-1\right)}{2+4+6+...+2n}=\frac{2006}{2007}$
+
+Si somos observadores nos daremos cuenta que los elementos de la izquierda son sucesiones, pero no cualquier sucesion, sino unas verdaderamente unicas si miramos los terminos de arriba nos daremos cuenta que son la suma de los impares y como sabemos esto es igual al numeor siguiente, al cuadrado, tal que $1+3+5+...+(2n-1)=n²$ . Para el termino de abajo se requiere algo mas de ingenio, pues si nos damos cuenta son la suma de todos los pares hasta $n$ , pero si lo dividimos entre dos es decir factorizar sacando el elemento comun, el dos, obtenemos que $2+4+6+...+2n=2(1+2+3+...+n)$ este termino que esta dentro del parentesis es una suma del 1 hasta $n$ terminos, asi que es una sucesion de suma de Gauss, por lo que podemos decir que la sucesion es equivalente a la siguiente ecuacion $\left(1+2+4+...+n\right)=\frac{n\left(n+1\right)}{2}$ a este resultado lo podemos simplificar sin perder su generalizacion, de modo que $\frac{n\left(n+1\right)}{\:2}=\frac{n^2+n}{2}$ con esto ya podemos reemplazarlo en la sucesion anterior, tal que $2\left(1+2+4+...+n\right)=2\left(\frac{n^2+n}{2}\right)$ si nos concentramos en este resultado podremos notar que la division y multiplicacion se contrarestan $\therefore 2\left(\frac{n^2+n}{2}\right)=n^2+n$ , bien ya que lo tenemos solo falta reemplazar estas equivalencias por sus terminos originales, de modo que $\\frac{1+3+5+...+\left(2n-1\right)}{2+4+6+...+2n}=\frac{n^2}{n^2+n}$ sustituimos $\Longrightarrow \frac{n^2}{n^2+n}=\frac{2006}{2007}$ para este punto solo hara falta algo de algebra , de modo que multiplicamos el denominador de ambos lados por el numeroador del otro tal que 
+$$\left(2007\right)\frac{n^2}{n^2+n}=\left(2007\right)\frac{2006}{2007}\Longrightarrow \frac{2007n^2}{n^2+n}=2006,\:\left(n^2+n\right)\frac{2007n^2}{n^2+n}=\left(n^2+n\right)\left(2006\right)\Longrightarrow 2007n^2=2006n^2+2006n,\left(2007n^2\right)-\left(2006n^2\right)=\left(2006n^2+2006n\right)-\left(2006n^2\right)\Longrightarrow n^2=2006n,\frac{n^2}{n}=\frac{2006}{n}\Longrightarrow n=2006$$ 
+Finalmente con esto se concluye que los casos donde $\exists n\in \mathbb{Z}^+$ tal que $\frac{1+3+5+...+\left(2n-1\right)}{2+4+6+...+2n}=\frac{2006}{2007} \quad n=2006$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
