@@ -200,3 +200,16 @@ Ahora solo juntamos todo y $(4n²+4n+1)-(8n²+24n+18)+(4n²+20n+25)$ tras esto a
 ¿Existe solucion para la ecuacion $2^n-2^m=1987$ si $m,n\in \mathbb{Z}^+$ ?
 
 Primero que nada para este problema hay que definir algo, al operar en base 2, tenemos que $2^n=2\cdot 2\cdot 2\cdot 2\cdot ...\cdot 2n$ y que por consiguiente $2^m=2\cdot 2\cdot 2\cdot 2\cdot ...\cdot 2m$ por lo que independientemente del valor de $m,n$ el resultado de dicha operacion sera un par puesto que en ningun momento se a agregado un 1 de modo que se cumplaa forma $2n+1$ para un impar $\therefore$ el resultado de $2^n-2^m$ sera siempre par, puesto que por paridad sabemos que la resta de los pares es par, sin embargo el termino 1987 es un impar, pues no cumple la condicion de $2n$, puesto que $2$ no divide a $1987$ por lo tanto es un impar y ya que establecimos que $2^n-2^m$ sera par $\Leftrightarrow$ $m,n\in \mathbb{Z}^+$ y ya que esto queda establecido no hay forma de que la resta de dos numeros pares den par, pues siempre dara un numero divisible entre 2 $\therefore$ $2^n-2^m\ne 1987$
+
+## Numeros Primos (Teoria de numeros)
+
+El conceptio de numeros primos es relativamente sencillo, pues basicamente entenderemos a los primos como numeros cuyos unicos divisores son ellos mismos y el uno, de forma mas formal se dice que $m\in \mathbb{P}$ tal que $\frac{m}{n}=a,m\in \mathbb{Z}^+,a,n=1,m$ pues bien el resto de numeros se les denomina como compuesto ya que estos se constituyen del producto de los primos.
+
+Por decision general, al $1$ no se le considera como primo, ni compuesto.
+Ahora bien, nuestro primer primo es el $2$, pues con este solo $\exists n=2,1$ tal que $\frac{2}{n}=a\Leftrightarrow a\in \mathbb{Z}^+$ , para el 3, el 5,7,9,11,13 se aplica lo mismo. 
+Esta claro esta esto restrigiendo que $n\in \mathbb{Z}^+$
+Pero ¿Cuantos primos hay? ¿Habra infinitos? y si es asi ¿Como podemos demostrarlo? 
+Pues la realidad es que si hay infinitos, pero si no me crees dejame demostrartelo.
+
+Tomemos a primos consecutivos por ejemplo, 2,3,5, creemos un numeros de sus productos tal que $c1=2\cdot 3\cdot 5\Rightarrow c1=30$ ahora a $c1+1$ tal que $c=31$ si probamos en dividir a $c$ entre los factores primos de $c$ veremos que no obtendremos un entero, incluso al probar con primos mayores, pues $\frac{31}{2}=a1,\frac{31}{3}=a2,\frac{31}{5}=a5...$ y como $c>c1$ y ningun primo antes de $c$ lo divide siendo sus unicos divisores el $1$ y si mismo decirmos que $c\in \mathbb{P}$ .
+Esto sirve para ver lo que haremos, supongamos que los primos son finitos y $p$ es el ultimo de ellos tal que $\mathbb{P}=2,3,5,7,...,p$ ahora $n=2\cdot 3\cdot 5\cdot 7\cdot ...\cdot p$ creo que ya puedes suponer a donde vot, si a $n+1=m$ $m>n$ "m" al no contener ni al factor $2,3,5,7,...,p$ no se cumple que $\frac{m}{b}=a,b\in \mathbb{Z}^+,b\le p$ tal que $a\in \mathbb{Z}^+$ $\therefore$ $m\in \mathbb{P}$ y como $m>n$ $\Rightarrow$ $m>p$ $\therefore$ para todo "p" primo siempre habra un "m" mayor por lo que realmente "p" no existe.
