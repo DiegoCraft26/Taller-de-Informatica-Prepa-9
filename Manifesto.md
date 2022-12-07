@@ -131,6 +131,23 @@ $x²-y²=¿?$ para este tendremos que aplicar una curiosa propiedad, pues para c
 $x²+y²+z²+2(xy+xy+yz)=¿?$ empecemos resolviendo el parentesis, es decir que $2(xy+xz+yz)=2xy+2xz+2yz$, como sabemos que $a+a-2a$, podemos reescribir la expresion como $2xy + 2xz +2yz = xy + xy + xZ + x2 +yz + yz$, asi que ahora solo queda remplazar y obtendremos que $x²+y²+z²+xy+xy+xz+xz+yz+yz$, a simple vista pudiera parecer quer solo empeoramos las cosas, pero la realidad es que estamos muy cercas de resolverlo, ahora vamos a volver a dividir la expresión por bloques de factores comunes sin repetir ningún termino tal que para $x$ tenemos el bloque compuesto por $x²+xy +xz$, sacamos al factor común, que seria $x$ y obtendremos que $x²+xy+xz=x(x+y+z)$. 
 Para el bloque de las $y$ se envlobaran los terminos $y²+xy+yz$ el cual se puede factorizar a partir de sacar el elemento comun, $y$, $\therefore y²+xy+yz=y(y+x+z)$. Para el bloque $z$ aplica la misma logica $z²+yz+xz=z(z+y+x)$ . Uniendo todos los bloques se obtiene que $x(x+y+z)+y(y+x+z)+z(z+y+x)$ esto ya va tomando mas forma, para el siguiente paso hay que revisar una propiedad muy curiosa de la suma y la clave para nuestro siguiente truco, pues resulta que $a+b=b+a$ y si eres observador veras dentro de los parentesis solo se realizaran sumas y no solo eso, sino que se estan sumando los mismo terminos $x,y,z$ $\therefore$ podemos decir que $(x+y+z)=(y+x+z)=(z+y+x)$ asi que entendiendo esto podemos elegir una de las expresiones y sustituir al resto por esa misma de modo que alfinal la ecuacion nos queda algo similar a esta forma $x\left(x+y+z\right)+y\left(y+x+z\right)+z\left(z+y+x\right)=x\left(x+y+z\right)+y\left(x+y+z\right)+z\left(x+y+z\right)$ y si tenemos un termino multiplicandose por si mismo se dice que $\left(x+y+z\right)\left(x+y+z\right)=\left(x+y+z\right)^2$ $\therefore$ podemos concluir que para todo $x,y,z$ que cumpla su pertenencia a los reales, cumple que $x^2+y^2+z^2+2\left(xy+xz+yz\right)=\left(x+y+z\right)^2$
 
+## Suma de Gauss (Teoria de Numeros)
 
+Supongamos que te pidieran hacer una suma ingentemente grande que tal una suma de $n$ terminos, similar a esto $1+2+3+4+5+6+7+8+9+...+n$ ¿que harias? seguro que piensas que algo asi es imposible, pues ¿como voy a sumar algo que ni siquiera se donde termina? Pues la realidad es que si es posible, y fue precisamente este problema el que llevo a un joven Gauss a desarrollar esta curiosa suma ahora lleva su nombre.
+
+Imaginemos que ahora en lugar de pedirte que sumes hasta $n$ , te pidiera que lo hicieras del 1 al 10, si eres agil los obtendras relativamente facil, pero que tal si fuera del 1 al 100 o del 1 al 1000? ya no parece tan sencillo verdad? pero que tal si te dijera que hay una forma relativamente facil de obtener todos estos casos, sin que te tomara mas de 5 minutos.
+
+El truco consiste en agarrar la suma y duplicarla colocando este clon justo abajo de nuestra original, solamente que invertida, tal que debajo del primer numero que el ultimo, del segundo el penultimo, y asi... si hacemos la suma verticalmente nos daremos cuenta que es la misma cifra en todos los lugares, por lo que solo debemos sumaldo, al ser el mismo numero pormos multiplicarlo, el resultado de esa multiplicacion lo dividiremos entre dos, pues hicimos la suma deseada dos veces y nos quedaria asi de manera grafica:
+
+$$
+\begin{matrix}
+1 &+& 2 &+& 3 &+& 4 &+& 5 &+& 6 &+& 7 &+& 8 &+& 9 &+& 10 \\
+10 &+& 9 &+& 8 &+& 7 &+& 6 &+& 5 &+& 4 &+& 3 &+& 2 &+& 1 \\
+11 &+& 11 &+& 11 &+& 11 &+& 11 &+& 11 &+& 11 &+& 11 &+& 11 &+& 11 
+\end{matrix}
+$$
+
+Entonces podemos deducir que 
+$$\frac{n\left(n+1\right)}{2}=\frac{n^2+n}{2} \quad n\in \mathbb{Z}^+$$
 
 
