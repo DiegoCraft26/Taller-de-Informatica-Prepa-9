@@ -110,5 +110,22 @@ Y ¿como formamos a un impar? pues es muy sencillo tambien, si nos damos cuenta 
 
 Ahora fijate en la siguiente sucesion: $1,4,9,16,25,36,49,64,81,100$ exacto son los resultados de los cuadrados del 1 al 10: pues $1^2=1,2^2=4,3^2=9,...,10^2=100$, ahora fijate que pasa si resto $4-1=3$ y si $9-4=5$ y ahora que tal si hacemos estos con todos lossmeros cuadrados inmediatos, de mayor a menor, pues se da que obtenemos: $1,2,3,5,7,9,11,...,2n+1$ por lo que $2n+1$ esta contemplado por $n^2$, asi que intuimos que $n^2\in 2n+1\Rightarrow \:n^2=1+3+6+7+\left(2n-1\right)$
 
+## Problema (Teoria de numeros)
+
+¿Por que tres numeros sucesivos cualquiera, si se multiplica el menor por el mayor te da un numero menor al cuadrado del numero de en medio?
+
+Empecemos definiendo el problema, decimos que $\exists a,b,c\in \mathbb{Z}$ pues al ser numeros consecutivos se intuye que son enteros solamente, ahora si son consecutivos quiere decir que la diferencia entre ellos es de $1\therefore a+1=b\:y\:b+1=c$ ahora atendamos al problemas, se nos plantea la siguiente cuestion ¿Por que $a\cdot c=b^2-1$?
+
+Para empezar, generalicemos el problema, definamos a $a$4 como $n$ siendo que $n\in \mathbb{Z}$, pues dicho caso $b$ sera $n+1$ y $c$ sera $n+2$ bien este problema se establece que $a\cdot c=b^2-1$ atendamos cada bloque de la ecuacion por separado $a\cdot c=n\left(n+2\right)$ bien si simplificamos esto nos da $n^2+2n=ac$ ahora bien para $b^2$ se escribiria $\left(n+2\right)^2=\left(n+1\right)\left(n+1\right)$ lo que en resumidas cuentas es $n^2+n+n+1=n^2+2n+1$.
+Volviendo al cuestionamiento inicial ¿$ac=b^2-1$? comprobemos, reemplazamos $ac$ por $n^2+2n$ y $a\:b^2$ por $n^2+2n´1$ quedando que $\left(n^2+2n\right)=\left(n^2+2n+1\right)-1$ y si resolvemos veremos que en efecto se cumple el enunciado.
+
+$\therefore$ concluimos el problema diciendo que $\forall \:a,b,c\in \mathbb{Z}\:tq\:a+1=b,\:b+1=c$ se cumple que $a\cdot c=b^2-1$
+
+
+
+
+
+
+
 
 
