@@ -121,8 +121,12 @@ Volviendo al cuestionamiento inicial ¿$ac=b^2-1$? comprobemos, reemplazamos $ac
 
 $\therefore$ concluimos el problema diciendo que $\forall \:a,b,c\in \mathbb{Z}\:tq\:a+1=b,\:b+1=c$ se cumple que $a\cdot c=b^2-1$
 
+## Productos Notables (Algebra)
+Sean $x,y,z\in \mathbb{R}$ podemos obtener las siguientes igualdades
 
+$x^2+2xy+y^2=¿?$ para esto tenemos que descomponer la expresion a su maxima forma es decir, $x^2+xy+xy+y^2$, una vez aqui dividiremos la expresion en dos bloques: $x^2+xy$ y $xy+y^2$, muy bien ya que tenemos esto factoricemos la expresion parte por parte: para $x^2+xy$ notamos que $x$ compone a ambos elemetos por lo que es su factor comun, si lo sacamos obtenemos que $x^2+xy=x\left(x+y\right)$. La misma logica aplica para $xy+y^2$, ya que la $y$ es su factor comun, lo sacamos en la factorizacion quedando que $xy+y^2=y\left(x+y\right)$. Su unimos todo nos queda que la expresion $x^2+xy+xy+y^2=x\left(x+y\right)+y\left(x+y\right)$, en $x\left(x+y\right)$ y $y\left(x+y\right)$ vemos un factor comun, el $\left(x+y\right)$, asi que lo sacamos y obtenemos $\left(x+y\right)\left(x+y\right)$, como sabemos que $a\cdot a=a^2$ podemos decir que $\left(x+y\right)\left(x+y\right)=\left(x+y\right)^2\:y\:\therefore x^2+2xy+x^2=\left(x+y\right)^2$
 
+$x²-y²=¿?$ para este tendremos que aplicar una curiosa propiedad, pues para completar la ecuacion sin alterar el resultado habra que agregar un 0, sí un 0, pero el truco no esta en agregarlo, sino en como lo hacemos, pues bien el 0 se puede agregar como tal, tambien lo podemos representar como $a-a=0$, o como nos interesa mas a nosotros $xy-xy$, de este modo podemos completar la expresion sin alterar el resultado tal que $x²-y²=x²+xy+xy-y²$, esto empieza a tomar forma, ahora nuevamente dividimos la expresion el bloques para factorizarlos: en este caso $x²-xy$ vemos que $x$ es el factor comun, si factorizamos en esta caso $x²-xy$ vemos que "$x$" es el factor comun, si factorizamos tenemos que $x²-xy=x(x-y)$. Para el bloque $y$ se usaran $xy-y²$ el cual se puede factorizar como $y(x-y)$ al unir todo de nuevo obtenemos $x(x-y)+y(x-y)=x²+xy-xy-y²$, ahora bien si miramos su factor comun es (x-y), si lo sacamos obtenemos la expresion que dice $x(x-y)+y(x-y)=(x+y)(x-y)$ que $\therefore x²-y²=(x+y)(x-y)$ una diferencia de cuadrados.
 
 
 
