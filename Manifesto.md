@@ -58,7 +58,7 @@ Divisibilidad $A|B$ refleja que un numero es divisor de otro expuesto
 
 Contradiccion $\Rightarrow \Leftarrow$ refleja algo falso o que se contradice a si mismo
 
-## Factoria (Combinatoria)
+## Factorial (Combinatoria)
 
 Entendemos a un factorial como la multiplicacion de todos los enteros positivos, hasta el 1, que preceden a un n, de forma que se puede definir que: $n! \Leftrightarrow n\in \mathbb{Z}^+, n!= n\left(n-1\right)\cdot \left(n-2\right)\cdot ...\cdot 1$
 
